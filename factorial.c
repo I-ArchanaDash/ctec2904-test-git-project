@@ -21,9 +21,9 @@ long factorial (int n) {
 
 	/*! 
 	 * Loop through each element. True if and only if
-	 * the int value from the user is greater than zero.
+	 * the int value from the user is non-zero.
 	 */
-	while(n > 0) {
+	while(n) {
 		/*! 
 		 * Multiply the right given value from the user with the left
 		 * factorial value and assign the result to left variable (result).
@@ -35,18 +35,18 @@ long factorial (int n) {
 }
 
 int main() {
-    int n = 0; // Declare a variable of type int and assign zero.
+        int n = 0; // Declare a variable of type int and assign zero.
 	long val; // Declare a variable of type long.
 
-	// Printf the string inside quotation. Prompt the user to type a number and process it.
+      // Printf the string inside quotation. Prompt the user to type a number and process it.
 	printf("Please enter a number\n");
 
 	scanf ("%d", &n); // Read next token as an int.
 
-	// Assign the result of the factorial to value.
+     // Assign the result of the factorial to value.
 	val = factorial(n);
 
-    // Display the factorial result, string inside the quotation.
+     // Display the factorial result, string inside the quotation.
 	printf("Val = %ld\n", val);
 	return 0; // Return nothing if the user does not enter a number.
 }
